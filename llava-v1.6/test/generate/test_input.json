@@ -1,0 +1,12 @@
+{
+    "input": {
+        "endpoint": "generate",
+        "parameters": {
+            "text": "Once upon a time,",
+            "sampling_params": {
+                "max_new_tokens": 200,
+                "temperature": 0
+            }
+        }
+    }
+}

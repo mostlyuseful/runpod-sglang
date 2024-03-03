@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "runpod-sglang-llava-v1.6"
+version = "0.2.0"
+description = ""
+authors = ["Maurice-Pascal Sonnemann <mpsonnemann@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+tqdm = "^4.66.2"
+aiohttp = "^3.9.3"
+sglang = {version = "^0.1.12", extras = ["all"]}
+psutil = "^5.9.8"
+pydantic = ">=2"
+fastapi = "^0.110.0"
+rpyc = "^6.0.0"
+torch = "2.1.2"
+uvloop = "^0.19.0"
+uvicorn = "^0.27.1"
+zmq = "^0.0.0"
+interegular = "^0.3.3"
+lark = "^1.1.9"
+numba = "^0.59.0"
+referencing = "^0.33.0"
+diskcache = "^5.6.3"
+cloudpickle = "^3.0.0"
+pillow = "^10.2.0"
+outlines = ">=0.0.27, <=0.0.30"
+vllm = "0.3.2" # https://github.com/sgl-project/sglang/issues/252
+datasets = "^2.17.1"
+runpod = "^1.6.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
